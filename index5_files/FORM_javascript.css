@@ -1,0 +1,71 @@
+/*
+	Eigenaar: B/CKC - Rijkshuisstijl Belastingdienst - Helpdesk.Huisstijl.CKC@belastingdienst.nl.
+	Versie: 1.3.0
+*/
+@media screen, projection {
+	.hide { display:none; }
+			
+	#MainContent .help-panel { display:none; }
+		#MainContent a.closehelp-link { overflow:hidden; display:block; width:15px; height:15px; text-indent:-999em; position:absolute; right:5px; top:5px;  background:url(../media/images/hyperlinks/close-help.gif) 0 0 no-repeat;}
+					
+	#MainContent .sub-panel-header h5 { cursor:pointer; background:url(../media/images/hyperlinks/sub-panel.gif) 5px 10px no-repeat; color:#154273; }
+		#MainContent .open-sub-panel .sub-panel-header h5 { cursor:pointer; background:url(../media/images/hyperlinks/sub-panel.gif) 5px -84px no-repeat; color:#0162cd; }
+		#MainContent .no-fold-out-sub-panel .sub-panel-header h5 { cursor:text; background:transparent; color:#000; }
+				
+	#MainContent .sub-panel-header td span.sub-header { cursor:pointer; background:url(../media/images/hyperlinks/sub-panel.gif) 0 7px no-repeat;  }
+		#MainContent .open-sub-panel .sub-panel-header  td span.sub-header { background:url(../media/images/hyperlinks/sub-panel.gif) 0 -87px no-repeat; }
+	
+		#MainContent .sub-panel-content { display:none; }
+			#MainContent .open-sub-panel .sub-panel-content { display:block; }
+		
+	#MainContent span.date-link { width:14px; cursor:pointer; height:20px; display:block; text-indent:-999em; float:left; z-index:999; margin-left:-15px; background:url(../media/images/hyperlinks/date.gif) 0 5px no-repeat; }
+	
+	#MainContent ul.faq li {  padding-bottom:4px; }
+		#MainContent ul.faq li.open h5, #MainContent ul.faq li.open div.help-details { background-color:#eef7fb; }
+		#MainContent ul.faq h5 { width:604px; overflow:hidden; font-weight:normal; padding-left:10px; background-image: url(../media/images/hyperlinks/help-panel.gif); background-position:0 4px; background-repeat:no-repeat; }
+			#MainContent ul.faq h5 span { display:block; float:left; width:530px;  color:#154273; cursor:pointer; }
+			#MainContent ul.faq h5 a.close { display:none; margin:1px 4px 0 0; line-height:1em; background:url(../media/images/hyperlinks/close-help2.gif) 100% 0 no-repeat; padding:0 16px 2px 0; }
+		
+			#MainContent ul.faq li.open h5 { background-position:0 -90px;  }
+				#MainContent ul.faq li.open h5 a.close { display:block; float:right; }
+		
+		#MainContent ul.faq div.help-details { padding:0 10px 4px 10px; }
+				
+	
+	/* Default styling for jQuery Datepicker v4.0.6. */
+	.datepick { background-color: #fff; color:#000; font-family:Verdana, Arial,Helvetica,Sans-serif; font-size: 11px; }
+	.datepick-popup { z-index: 1000; }
+	.datepick a { text-decoration: none; }
+	.datepick-ctrl { display:none; }
+	.datepick-nav { display:none; }
+	
+	.datepick-month-row { clear: left; }
+	.datepick-month { float: left; text-align: center; }
+	
+	.datepick-month-header { width:198px; background-color:#8fcae7; overflow:hidden; padding:4px 5px; border:3px solid #fff; border-bottom:none; }
+		.datepick-month-header select { border:1px solid #000; float:left; width:77px; padding:2px 0; display:block; }
+			.datepick-month-header select.month-select { width:117px; margin-right:4px; }
+		
+		.short-datepick .datepick-month-header select { display:none; }
+			.short-datepick .datepick-month-header select.month-select { display:block; width:198px; margin-right:0; }
+	
+		.datepick-month-header input { position: absolute; display: none; }
+	
+	.datepick-month table { width:214px; border-collapse: collapse; }
+		.datepick-month th, .datepick-month td { margin: 0; padding: 0; font-weight: normal; text-align: center; }
+		.datepick-month th { border:3px solid #fff; }
+			.datepick-month th, .datepick-month th a { background-color:#8fcae7; color:#000;  }
+		.datepick-month td { background-color:#ddeff8; border:3px solid #fff; }
+			.datepick-month a { display: block; padding:3px 0; color: #000; text-decoration: none; }
+			.datepick-month span { display: block; padding:4px 0; color:#000; }
+				.datepick-month span.datepick-other-month { color:#535353; }
+	
+			.datepick-month td .datepick-other-month { background-color:#e1e1e1; }
+			/* .datepick-month td .datepick-weekend { background-color: #e5e1ee;  } */
+			.datepick-month td .datepick-today { background-color: #fdf6bb; }
+			.datepick-month td .datepick-highlight { background-color: #edd50d;color: #000; }
+			.datepick-month td .datepick-selected { background-color: #edd50d; color:#000;  }
+			
+	.datepick-clear-fix { clear: both; }
+	.datepick-cover { display:none; position:absolute; z-index: -1; top:-1px; left:-1px; width:100px; height:100px; }		
+}
